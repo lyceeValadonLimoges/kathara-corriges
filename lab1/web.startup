@@ -1,0 +1,8 @@
+#configuration de l'interface eth0
+ifconfig eth0 192.168.10.253/24 up
+
+#configuration de la passerelle par defaut
+route add default gw 192.168.10.254
+
+#lancement du service apache2
+service apache2 start
