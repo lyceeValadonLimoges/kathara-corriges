@@ -1,0 +1,5 @@
+#Configuration de l'interface eth0
+ifconfig eth0 192.168.10.254/24 up
+
+# Activer l ipmasquerade pour le NAT
+iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
